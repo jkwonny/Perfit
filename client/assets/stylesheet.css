@@ -1,0 +1,76 @@
+.header-text-primary {
+    color: black;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-text-secondary {
+    color: black;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#login_button {
+    position: absolute;
+    right: 1%;
+    padding: 10px;
+    border: .5px solid black;
+    height: 4%;
+    width: 4%;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+#signup_button {
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+    border: .5px solid black;
+    height: 4%;
+    width: 4%;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+#signupCompleted {
+    text-align: center;
+    position: fixed;
+    width:30%;
+    height:15%;
+    left:35%;
+    right:50%;
+    top:30%;
+    bottom:50%;
+    background-color: white;
+    border: 2px solid black;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+#picture {
+    width: auto;
+    height: auto;
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.loginpage {
+    text-align: center;
+    position: fixed;
+    width:30%;
+    height:30%;
+    left:35%;
+    right:50%;
+    top:30%;
+    bottom:50%;
+    background-color: white;
+    border: 2px solid black;
+    font-family: 'Ibarra Real Nova', serif;
+}

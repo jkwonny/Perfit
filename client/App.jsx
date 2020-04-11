@@ -4,13 +4,7 @@ import axios from 'axios';
 import * as THREE from "three";
 
 
-import LoginPage from './components/LoginPage.jsx';
-import Title from './components/Title.jsx';
-import Bio from './components/Bio.jsx';
-import Picture from './components/Picture.jsx';
-import LoginButton from './components/LoginButton.jsx';
-import SignupPage from './components/SignupPage.jsx';
-import SignupCompleted from './components/SignupCompleted.jsx';
+import MainPage from './components/MainPage.jsx';
 
 
 class App extends Component {
@@ -86,37 +80,10 @@ class App extends Component {
 
 
     render () { 
-        let loginPage;
-        let signupPage;
-        let signupCompleted;
-        let loginButton;
-        if (this.state.loginButton === false && this.state.signupButton === false) {
-            loginButton = <LoginButton signupButtonClicked={this.signupButtonClicked} loginButtonClicked={this.loginButtonClicked} loginButton={this.state.loginButton} signupButton={this.state.signupButton}/>
-        }
-        if (this.state.loginButton === true) {
-            loginPage = <LoginPage handleChange={this.handleChange} loginButtonClicked={this.loginButtonClicked}/>;
-        }
-        if (this.state.signupButton === true) {
-            signupPage = <SignupPage loginButtonClicked={this.loginButtonClicked} submitSignup={this.submitSignup} handleChange={this.handleChange}/>;
-        }
-        if (this.state.signedUp === true) {
-            signupCompleted = <SignupCompleted/>
-        }
         
         return (
             <div>
-                <div>
-                    {loginButton}
-                    {loginPage}
-                    {signupPage}
-                    {signupCompleted}
-                </div>
-
-                <div>
-                    <Title/>
-                    <Picture/>
-                    <Bio/>
-                </div>
+                <MainPage />
             </div>
         )
     };
